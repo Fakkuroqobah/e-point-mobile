@@ -1,6 +1,6 @@
 class Api {
-  static const String baseUrl1 = "192.168.43.79";
-  static const String baseUrl = "http://192.168.43.79/point-sekolah/api/";
+  static const String baseUrl1 = "192.168.254.8";
+  static const String baseUrl = "http://192.168.254.8/point-sekolah/api/";
 
   static const String downloadSurat =
       "point-sekolah/surat_pemanggilan/download/";
