@@ -10,8 +10,5 @@ class Api {
   static const String peraturan = "${baseUrl}peraturan";
   static const String riwayatPelanggaran = "${baseUrl}riwayat_pelanggaran?id=";
   static const String riwayatPemanggilan = "${baseUrl}riwayat_pemanggilan?id=";
-
-  static const String hewan = "${baseUrl}hewan";
-  static const String ajukanAdopsi = "${baseUrl}ajukan_adopsi";
   static const String ubahProfil = "${baseUrl}ubah_profil";
 }

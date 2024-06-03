@@ -4,7 +4,6 @@ import 'package:provider/provider.dart';
 
 import 'screens/login_page.dart';
 
-import 'providers/hewan_provider.dart';
 import 'providers/loading_provider.dart';
 
 void main() {
@@ -19,8 +18,7 @@ class MainApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider<LoadingProvider>(
-            create: (_) => LoadingProvider()),
-        ChangeNotifierProvider<HewanProvider>(create: (_) => HewanProvider()),
+            create: (_) => LoadingProvider())
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,

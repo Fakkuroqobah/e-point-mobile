@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../configs/api.dart';
 import '../models/jumlah_point_model.dart';
-import '../providers/hewan_provider.dart';
 import '../configs/constant.dart';
 import '../services/jumlah_point_service.dart';
 
@@ -22,9 +20,6 @@ class _HomePageState extends State<HomePage> {
   @override
   void initState() {
     super.initState();
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      Provider.of<HewanProvider>(context, listen: false).getData();
-    });
   }
 
   @override
