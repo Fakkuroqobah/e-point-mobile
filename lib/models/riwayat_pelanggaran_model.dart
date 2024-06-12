@@ -10,7 +10,7 @@ class RiwayatPelanggaranModel {
   String idPelanggaranSiswa;
   String idPelanggaran;
   String idSiswa;
-  String idKelas;
+  String kelas;
   String idPelapor;
   DateTime tanggalPelanggaran;
   String point;
@@ -22,7 +22,7 @@ class RiwayatPelanggaranModel {
     required this.idPelanggaranSiswa,
     required this.idPelanggaran,
     required this.idSiswa,
-    required this.idKelas,
+    required this.kelas,
     required this.idPelapor,
     required this.tanggalPelanggaran,
     required this.point,
@@ -36,7 +36,7 @@ class RiwayatPelanggaranModel {
         idPelanggaranSiswa: json["id_pelanggaran_siswa"],
         idPelanggaran: json["id_pelanggaran"],
         idSiswa: json["id_siswa"],
-        idKelas: json["id_kelas"],
+        kelas: json["kelas"],
         idPelapor: json["id_pelapor"],
         tanggalPelanggaran: DateTime.parse(json["tanggal_pelanggaran"]),
         point: json["point"],
@@ -49,7 +49,7 @@ class RiwayatPelanggaranModel {
         "id_pelanggaran_siswa": idPelanggaranSiswa,
         "id_pelanggaran": idPelanggaran,
         "id_siswa": idSiswa,
-        "id_kelas": idKelas,
+        "kelas": kelas,
         "id_pelapor": idPelapor,
         "tanggal_pelanggaran": tanggalPelanggaran.toIso8601String(),
         "point": point,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../configs/constant.dart';
 import '../models/riwayat_pelanggaran_model.dart';
 import '../services/riwayat_pelanggaran_service.dart';
 
@@ -18,9 +19,10 @@ class _RiwayatPelanggaranPageState extends State<RiwayatPelanggaranPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Riwayat Pelanggaran'),
-        centerTitle: true,
-      ),
+          title: const Text("Riwayat Pelanggaran",
+              style: TextStyle(color: Colors.white)),
+          centerTitle: true,
+          backgroundColor: Constant.colorSecondary),
       body: FutureBuilder<List<RiwayatPelanggaranModel>>(
         future: riwayatpelanggaranService.getRiwayatPelanggaran(),
         builder: (context, snapshot) {

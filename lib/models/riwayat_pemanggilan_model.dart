@@ -16,7 +16,7 @@ class RiwayatPemanggilanModel {
   DateTime tanggalSurat;
   String namaOrtu;
   String namaSiswa;
-  String namaKelas;
+  String kelas;
   String namaGuru;
 
   RiwayatPemanggilanModel({
@@ -29,7 +29,7 @@ class RiwayatPemanggilanModel {
     required this.tanggalSurat,
     required this.namaOrtu,
     required this.namaSiswa,
-    required this.namaKelas,
+    required this.kelas,
     required this.namaGuru,
   });
 
@@ -44,7 +44,7 @@ class RiwayatPemanggilanModel {
         tanggalSurat: DateTime.parse(json["tanggal_surat"]),
         namaOrtu: json["nama_ortu"],
         namaSiswa: json["nama_siswa"],
-        namaKelas: json["nama_kelas"],
+        kelas: json["kelas"],
         namaGuru: json["nama_guru"],
       );
 
@@ -59,7 +59,7 @@ class RiwayatPemanggilanModel {
         "tanggal_surat": tanggalSurat.toIso8601String(),
         "nama_ortu": namaOrtu,
         "nama_siswa": namaSiswa,
-        "nama_kelas": namaKelas,
+        "kelas": kelas,
         "nama_guru": namaGuru,
       };
 }

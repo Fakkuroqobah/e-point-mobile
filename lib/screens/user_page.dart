@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../configs/constant.dart';
+import 'login_page.dart';
 
 class UserPage extends StatefulWidget {
   const UserPage({super.key});
@@ -35,10 +36,9 @@ class _UserPageState extends State<UserPage> {
     return Scaffold(
         backgroundColor: Constant.colorPrimary,
         appBar: AppBar(
-          centerTitle: true,
-          backgroundColor: Colors.white,
-          title: const Text('Profil'),
-        ),
+            title: const Text("Profil", style: TextStyle(color: Colors.white)),
+            centerTitle: true,
+            backgroundColor: Constant.colorSecondary),
         body: SingleChildScrollView(
           child: Padding(
             padding: const EdgeInsets.all(30.0),
@@ -97,6 +97,31 @@ class _UserPageState extends State<UserPage> {
                   ),
                 ),
                 const SizedBox(height: 18.0),
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.pushAndRemoveUntil(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const LoginPage()),
+                        (Route<dynamic> route) => false,
+                      );
+                    },
+                    style: ElevatedButton.styleFrom(
+                      elevation: 0,
+                      foregroundColor: Colors.white,
+                      backgroundColor: Colors.red[400],
+                      shape: RoundedRectangleBorder(
+                        borderRadius:
+                            BorderRadius.circular(15.0), // Border radius 15
+                      ),
+                    ),
+                    child: const Padding(
+                      padding: EdgeInsets.all(15.0),
+                      child: Text(
+                        'Logout',
+                        textAlign: TextAlign.center, // Teks diatur ke tengah
+                      ),
+                    ))
               ],
             ),
           ),

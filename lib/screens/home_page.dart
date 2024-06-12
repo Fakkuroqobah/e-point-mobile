@@ -25,7 +25,10 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("POINT"), centerTitle: true),
+      appBar: AppBar(
+          title: const Text("POINT", style: TextStyle(color: Colors.white)),
+          centerTitle: true,
+          backgroundColor: Constant.colorSecondary),
       backgroundColor: Constant.colorPrimary,
       body: SafeArea(
         child: FutureBuilder<JumlahPointModel>(
@@ -65,7 +68,7 @@ class _HomePageState extends State<HomePage> {
                                     preferences.getString("id_akun") ?? '';
 
                                 final Uri urlDownloadSuratPemanggilan = Uri(
-                                    scheme: 'http',
+                                    scheme: 'https',
                                     host: Api.baseUrl1,
                                     path: "${Api.downloadSurat}$id");
 

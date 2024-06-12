@@ -18,9 +18,10 @@ class _PeraturanPageState extends State<PeraturanPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Peraturan Sekolah'),
-        centerTitle: true,
-      ),
+          title: const Text("Peraturan Sekolah",
+              style: TextStyle(color: Colors.white)),
+          centerTitle: true,
+          backgroundColor: Constant.colorSecondary),
       body: FutureBuilder<List<PeraturanModel>>(
         future: peraturanService.getPeraturan(),
         builder: (context, snapshot) {
