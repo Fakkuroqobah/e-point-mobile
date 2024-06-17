@@ -124,7 +124,7 @@ class _LoginPageState extends State<LoginPage> {
                           behavior: SnackBarBehavior.floating,
                           backgroundColor: Colors.transparent,
                           content: AwesomeSnackbarContent(
-                            title: 'On Snap!',
+                            title: 'Error!',
                             message: 'Username atau Password harus diisi',
                             contentType: ContentType.failure,
                           ),
@@ -160,7 +160,7 @@ class _LoginPageState extends State<LoginPage> {
                             behavior: SnackBarBehavior.floating,
                             backgroundColor: Colors.transparent,
                             content: AwesomeSnackbarContent(
-                              title: 'On Snap!',
+                              title: 'Error!',
                               message: 'Username atau Password salah',
                               contentType: ContentType.failure,
                             ),
@@ -177,7 +177,7 @@ class _LoginPageState extends State<LoginPage> {
                           behavior: SnackBarBehavior.floating,
                           backgroundColor: Colors.transparent,
                           content: AwesomeSnackbarContent(
-                            title: 'On Snap!',
+                            title: 'Error!',
                             message: (err.response != null)
                                 ? err.response?.data
                                 : "Terjadi kesalahan, periksa koneksi internetmu",

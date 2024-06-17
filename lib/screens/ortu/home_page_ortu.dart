@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shared_preferences/shared_preferences.dart';
-import 'package:url_launcher/url_launcher.dart';
 
-import '../../configs/api.dart';
 import '../../models/jumlah_point_model.dart';
 import '../../configs/constant.dart';
 import '../../services/jumlah_point_service.dart';

@@ -3,7 +3,7 @@ import 'package:iconsax/iconsax.dart';
 
 import '../../configs/constant.dart';
 import '../riwayat_pemanggilan_page.dart';
-import '../user_page.dart';
+import 'user_page_ortu.dart';
 import 'home_page_ortu.dart';
 
 class BottomOrtuPage extends StatefulWidget {
@@ -19,7 +19,7 @@ class _BottomOrtuPageState extends State<BottomOrtuPage> {
   static const List<Widget> _pages = <Widget>[
     HomePageOrtu(),
     RiwayatPengambilanPage(),
-    UserPage(),
+    UserPageOrtu(),
   ];
 
   void _onItemTapped(int index) {

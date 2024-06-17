@@ -9,7 +9,7 @@ class JumlahPointService {
 
   Future<JumlahPointModel> getJumlahPoint() async {
     SharedPreferences preferences = await SharedPreferences.getInstance();
-    String id = preferences.getString("id_akun") ?? '';
+    String id = preferences.getString("id_siswa") ?? '';
 
     final response = await _dio.get(Api.jumlahPoint + id);
 

@@ -3,19 +3,19 @@ import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:awesome_snackbar_content/awesome_snackbar_content.dart';
 
-import '../configs/constant.dart';
-import '../providers/loading_provider.dart';
-import '../services/user_service.dart';
-import 'login_page.dart';
+import '../../configs/constant.dart';
+import '../../providers/loading_provider.dart';
+import '../../services/user_service.dart';
+import '../login_page.dart';
 
-class UserPage extends StatefulWidget {
-  const UserPage({super.key});
+class UserPageOrtu extends StatefulWidget {
+  const UserPageOrtu({super.key});
 
   @override
-  State<UserPage> createState() => _UserPageState();
+  State<UserPageOrtu> createState() => _UserPageOrtuState();
 }
 
-class _UserPageState extends State<UserPage> {
+class _UserPageOrtuState extends State<UserPageOrtu> {
   final UserService _userService = UserService();
 
   final TextEditingController txtId = TextEditingController();
@@ -133,7 +133,7 @@ class _UserPageState extends State<UserPage> {
                         String password = txtPassword.text.toString();
 
                         _userService
-                            .editProfil(id, password, "siswa")
+                            .editProfil(id, password, "ortu")
                             .then((value) {
                           final snackBar = SnackBar(
                             elevation: 0,

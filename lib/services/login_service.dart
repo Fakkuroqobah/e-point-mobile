@@ -26,6 +26,7 @@ class LoginService {
         LoginModel loginModel = LoginModel.fromJson(response.data);
 
         preferences.setString("id_akun", loginModel.idAkun);
+        preferences.setString("id_siswa", loginModel.idSiswa);
         preferences.setString("nama_akun", loginModel.namaAkun);
         preferences.setString("username", loginModel.username);
 

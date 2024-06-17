@@ -9,5 +9,5 @@ class Api {
   static const String peraturan = "${baseUrl}peraturan";
   static const String riwayatPelanggaran = "${baseUrl}riwayat_pelanggaran?id=";
   static const String riwayatPemanggilan = "${baseUrl}riwayat_pemanggilan?id=";
-  static const String ubahProfil = "${baseUrl}ubah_profil";
+  static const String editProfil = "${baseUrl}edit_profil";
 }
