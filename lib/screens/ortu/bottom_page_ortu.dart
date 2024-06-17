@@ -4,6 +4,7 @@ import 'package:iconsax/iconsax.dart';
 import '../../configs/constant.dart';
 import '../riwayat_pemanggilan_page.dart';
 import '../user_page.dart';
+import 'home_page_ortu.dart';
 
 class BottomOrtuPage extends StatefulWidget {
   const BottomOrtuPage({super.key});
@@ -16,6 +17,7 @@ class _BottomOrtuPageState extends State<BottomOrtuPage> {
   int _selectedIndex = 0;
 
   static const List<Widget> _pages = <Widget>[
+    HomePageOrtu(),
     RiwayatPengambilanPage(),
     UserPage(),
   ];
@@ -38,6 +40,10 @@ class _BottomOrtuPageState extends State<BottomOrtuPage> {
           BottomNavigationBarItem(
             icon: Icon(Iconsax.home_hashtag),
             label: 'Beranda',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Iconsax.paperclip),
+            label: 'Riwayat',
           ),
           BottomNavigationBarItem(
             icon: Icon(Iconsax.user),
