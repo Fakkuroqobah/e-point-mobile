@@ -48,6 +48,14 @@ class _HomePageOrtuState extends State<HomePageOrtu> {
                               fontSize: 62,
                               fontWeight: FontWeight.bold,
                               color: Constant.colorSecondary)),
+                      Center(
+                        child: Text(snapshot.data?.konsekuensi ?? "",
+                            style: TextStyle(
+                                fontSize: 12,
+                                fontWeight: FontWeight.bold,
+                                color: Constant.colorSecondary),
+                            textAlign: TextAlign.center),
+                      ),
                     ],
                   ),
                 );

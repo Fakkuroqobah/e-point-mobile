@@ -82,6 +82,14 @@ class _HomePageState extends State<HomePage> {
                               },
                               child: const Text("Download surat pemanggilan"))
                           : Container(),
+                      Center(
+                        child: Text(snapshot.data?.konsekuensi ?? "",
+                            style: TextStyle(
+                                fontSize: 12,
+                                fontWeight: FontWeight.bold,
+                                color: Constant.colorSecondary),
+                            textAlign: TextAlign.center),
+                      ),
                     ],
                   ),
                 );

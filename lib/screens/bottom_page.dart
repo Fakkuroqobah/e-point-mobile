@@ -49,7 +49,7 @@ class _BottomPageState extends State<BottomPage> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Iconsax.menu),
-            label: 'Riwayat Pemanggilan',
+            label: 'Riwayat Pelanggaran',
           ),
           BottomNavigationBarItem(
             icon: Icon(Iconsax.user),
