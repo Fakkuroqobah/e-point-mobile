@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
 import 'home_page.dart';
+import 'konsekuensi_page.dart';
 import 'peraturan_page.dart';
 import 'riwayat_pelanggaran_page.dart';
 import 'user_page.dart';
@@ -21,6 +22,7 @@ class _BottomPageState extends State<BottomPage> {
     HomePage(),
     PeraturanPage(),
     RiwayatPelanggaranPage(),
+    KonsekuensiPage(),
     UserPage(),
   ];
 
@@ -50,6 +52,10 @@ class _BottomPageState extends State<BottomPage> {
           BottomNavigationBarItem(
             icon: Icon(Iconsax.menu),
             label: 'Riwayat Pelanggaran',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Iconsax.activity),
+            label: 'Konsekuensi',
           ),
           BottomNavigationBarItem(
             icon: Icon(Iconsax.user),
